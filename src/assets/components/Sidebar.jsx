@@ -12,7 +12,7 @@ const Sidebar = () => {
         <h2>Free Bank</h2>
       </div>
       <ul>
-        <Link to={"/home"} className=" nav-item forLink active">
+        <Link to={"/home"} className=" nav-item forLink ">
           <li>
             <i className="fas fa-home"></i>
             <span> Home</span>
