@@ -13,12 +13,11 @@ import ProtectedRoutes from "./assets/components/ProtectedRoutes";
 import Notfound from "./assets/pages/Notfound";
 import RequestOTP from "./assets/pages/RequestOTP";
 
+
 function App() {
   return (
     <>
-     <button class="menu-toggle" id="menuToggle">
-      <i class="fas fa-bars"></i>
-    </button>
+     
       <Routes>
         <Route element={<ProtectedRoutes><Dashboard/></ProtectedRoutes>}>
           <Route index path="/home" element={<Home />} />
