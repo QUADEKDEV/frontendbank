@@ -9,12 +9,11 @@ import Login from "./assets/pages/Login";
 import Signup from "./assets/pages/Signup";
 import ForgetPassword from "./assets/pages/ForgetPassword";
 import ProfieUpdate from "./assets/pages/ProfieUpdate";
-import ProtectedRoutes from "./assets/components/protectedRoutes.jsx";
+import ProtectedRoutes from "./assets/components/ProtectedRoutes.jsx";
 import Notfound from "./assets/pages/Notfound";
 import RequestOTP from "./assets/pages/RequestOTP";
 
 function App() {
-
   return (
     <>
      <button class="menu-toggle" id="menuToggle">
