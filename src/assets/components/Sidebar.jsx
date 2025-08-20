@@ -5,7 +5,8 @@ const Sidebar = () => {
     localStorage.clear();
   }
   return (
-    <div className="sidebar">
+    <div>
+
       <div className="logo">
         <i className="fa-solid fa-building-columns"></i>
         <h2>Free Bank</h2>
