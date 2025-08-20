@@ -14,7 +14,7 @@ const RequestOTP = () => {
     onSubmit: async (values) => {
       console.log(values);
       let response = await axios.post(
-        "http://localhost:5000/user/requestotp",
+        "https://backendfreebank.onrender.com/user/requestotp",
         values
       );
      

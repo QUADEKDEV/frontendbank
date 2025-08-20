@@ -16,7 +16,7 @@ const Signup = () => {
     onSubmit: async (values) => {
      
       let response = await axios.post(
-        "http://localhost:5000/user/signup",
+        "https://backendfreebank.onrender.com/user/signup",
         values
       );
       console.log(response.data);

@@ -13,7 +13,7 @@ const ProfieUpdate = () => {
     onSubmit: async (values) => {
       if (file) {
         let response = await axios.post(
-          "http://localhost:5000/user/updateprofile/"+id,
+          "https://backendfreebank.onrender.com/user/updateprofile/"+id,
 
          {profileImage: file},
           {

@@ -28,7 +28,7 @@ function Transfer() {
 
       };
       let response = await axios.post(
-        "http://localhost:5000/user/transfer",transfer,
+        "https://backendfreebank.onrender.com/user/transfer",transfer,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -38,7 +38,7 @@ function Transfer() {
       );
       if(response.data.status==true){
         dispatch(maketransfer(value));
-        let history = await axios.post("http://localhost:5000/user/history", {id},
+        let history = await axios.post("https://backendfreebank.onrender.com/user/history", {id},
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -58,7 +58,7 @@ function Transfer() {
       const resolveAccount = async () => {
         let accountNumber = String(formik.values.accountNumber);
         let response = await axios.post(
-          "http://localhost:5000/user/resolveaccount",
+          "https://backendfreebank.onrender.com/user/resolveaccount",
           { accountNumber },
           {
             headers: {

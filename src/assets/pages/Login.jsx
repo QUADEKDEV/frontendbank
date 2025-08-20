@@ -33,7 +33,7 @@ const Login = () => {
     },
     onSubmit: async (values) => {
       let response = await axios.post(
-        "http://localhost:5000/user/login",
+        "https://backendfreebank.onrender.com/user/login",
         values
       );
       localStorage.setItem("token", response.data.token);
@@ -46,7 +46,7 @@ const Login = () => {
         dispatch(addaccount(response.data.person.accountNumber));
         dispatch(addprofileimage(response.data.person.profileImage));
         let historyid = response.data.person.id;
-        let history = await axios.post("http://localhost:5000/user/history", {id:historyid},
+        let history = await axios.post("https://backendfreebank.onrender.com/user/history", {id:historyid},
           {
             headers: {
               Authorization: `Bearer ${token}`,

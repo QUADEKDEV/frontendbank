@@ -16,7 +16,7 @@ const ForgetPassword = () => {
     onSubmit: async (values) => {
       console.log(values);
       let response = await axios.post(
-        "http://localhost:5000/user/changePassword",
+        "https://backendfreebank.onrender.com/user/changePassword",
         values
       );
       console.log(response.data);
